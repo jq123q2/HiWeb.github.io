@@ -1,0 +1,67 @@
+/* 清除默认样式的代码 */
+/* index.css是用来美化首页的 */
+* {
+    margin: 0;
+    padding: 0;
+    /* 內减模式 */
+    box-sizing: border-box;
+}
+body{
+	font:16px/1.5 ;
+	color: #333;
+}
+
+/* 去除默认样式 */
+ul,
+ol{
+	list-style: none;
+}
+
+/* 去除默认的倾斜效果 */
+em,
+i{
+	font-style: normal;
+}
+
+/* 去除a标签默认下划线，并设置默认文字颜色 */
+a{
+	text-decoration:none;
+	color: #333;
+}
+
+/* 设置img的垂直对齐方式为居中对齐，去除默认img默认下的缝隙 */
+img{
+	vertical-align: middle;
+}
+
+/* 去除input默认样式 */
+input{
+	border: none;
+	outline: none;
+	color: #333;
+}
+
+/* 左浮动 */
+.f1{
+	float: left;
+}
+/* 右浮动 */
+.f2{
+	float: right;
+}
+
+
+/* 双伪元素清除法 */
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table; 
+  }
+  .clearfix:after {
+    clear:both;
+  }
+  
+.header{
+	  margin-top:30px ;
+	  height: 70px;
+  }
